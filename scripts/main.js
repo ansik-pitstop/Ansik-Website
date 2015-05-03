@@ -2,7 +2,7 @@
  Initialization
  */
 
-var app = angular.module('PitStopWebsite', ['firebase', 'ui.router', 'ngAnimate']);
+var app = angular.module('AnsikWebsite', ['firebase', 'ui.router', 'ngAnimate']);
 
 /*
  Routing And Stuff
