@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <!-- Initialization -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ansik</title>
+    <meta name="description" content="Making automotive servicing safer, quicker and more affordable">
+    <link rel="apple-touch-icon" href="resources/ansik_icon.png">
+    <link rel="icon" type="image/png" href="resources/ansik_icon.png">
+
+    <!-- CSS Files -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="packages/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="packages/animate.css/animate.min.css" rel="stylesheet">
+    <link href="packages/sweetalert/lib/sweet-alert.css" rel="stylesheet">
+    <link href="packages/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Javascript Libraries -->
+    <script src="packages/angular/angular.min.js"></script>
+    <script src="packages/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="packages/ngAnimate/js/angular-animate.min.js"></script>
+    <script src="packages/sweetalert/lib/sweet-alert.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="packages/firebase/firebase.js"></script>
+    <script src="packages/angularfire/dist/angularfire.min.js"></script>
+
+    <!-- Show time -->
+    <script src="build/main.min.js"></script>
+
+    <!-- Font Family -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="PitStopWebsite">
+<!--
+    <header class="toolBar" id="shrinkHeader">
+        <section class="columns">
+            <h1 class="title column-2" ui-sref="home()">
+                PitStop
+            </h1>
+            <a class="link column-2" ui-sref="http://medium.com/pitstop_automotive">
+                <i class="ion-compose"></i>
+                Blog
+            </a>
+            <a class="link column-2" ui-sref="about()">
+                <i class="ion-person-stalker"></i>
+                About
+            </a>
+            <a class="link column-2" ui-sref="contact()">
+                <i class="ion-email"></i>
+                Contact Us
+            </a>
+            <a class="link column-2" href="http://facebook.com/pitstop_automotive">
+                <i class="ion-social-facebook"></i>
+                Facebook
+            </a>
+            <a class="link column-2" href="http://twitter.com/pitstop_automotive">
+                <i class="ion-social-twitter"></i>
+                Twitter
+            </a>
+        </section>
+    </header>
+    -->
+    <header class="homeHeader">
+        <section class="inner">
+            <h1 class="title">Ansik <strong>Incorporation</strong></h1>
+            <section class="fancyDivider"></section>
+            <p class="description">
+                Creators of <a href="http://shocklock.ca" target="_blank">ShockLock</a> and <a target="_blank" href="http://pitstop.ansik.ca">PitStop</a>
+            </p>
+        </section>
+    </header>
+    <section class="mainContent">
+        <section ui-view class="animated fadeIn"></section>
+    </section>
+    <footer class="mainFooter">
+        <section class="columns">
+            <p class="column-6 description">
+                Made with <i class="ion-heart"></i> in Waterloo, Ontario.
+            </p>
+            <ul class="column-6 links">
+                <li><p><a ui-sref="contact()">Contact</a></p></li>
+                <li><p><a ui-sref="careers()">Careers</a></p></li>
+                <li><p><a href="http://blog.ansik.ca" target="_blank">News</a></p></li>
+                <li><p><a ui-sref="home()">Home</a></p></li>
+            </ul>
+        </section>
+    </footer>
+    <!-- Jquery -->
+    <script src="packages/jquery/dist/jquery.min.js"></script>
+    <script src="build/ui.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-58465416-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+        </html>
