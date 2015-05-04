@@ -40,10 +40,12 @@ $base-font-family:          "Helvetica Neue", "Roboto", sans-serif;
  Main Code
  */
 
+body {
+ border-top: 5px solid $color-gray;
+}
 .mainContent {
  @include position(relative, null null null null);
  padding: 0;
- padding-bottom: 70px;
  min-height: 100%;
 }
 iframe {
@@ -158,6 +160,20 @@ iframe {
   background: white;
   margin: 0 auto !important;
  }
+ &.homePage {
+  background: $color-dark-black;
+  padding: 100px 10px;
+  .heading {
+   color: white;
+  }
+  .heading2 {
+   color: $color-light-black;
+   a {
+    color: $color-blue;
+    opacity: 0.5;
+   }
+  }
+ }
  &.map {
   margin: 0 auto !important;
   padding: 0 !important;
@@ -197,6 +213,15 @@ iframe {
    margin: 20px auto;
   }
  }
+ .heading3 {
+  color: $color-dark-gray;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  font-size: 12px;
+  font-style: italic;
+ }
  .title {
   text-transform: none;
   color: rgba(0,0,0,0.435);
@@ -216,11 +241,6 @@ iframe {
 .mainFooter{
  width: 100%;
  padding: 20px 10px;
- position: fixed;
- bottom: 0;
- background: white;
- left: 0;
- right: 0;
  border-top: 1px solid $color-gray;
 
  .columns {
@@ -259,6 +279,37 @@ iframe {
   }
  }
 }
+.product {
+ text-align: center;
+ padding: 50px 10px;
+ position: relative;
+ -webkit-transition: all 1s ease;
+ -moz-transition: all 1s ease;
+ -ms-transition: all 1s ease;
+ -o-transition: all 1s ease;
+ transition: all 1s ease;
+ @include border-top-radius(3px);
+ @include border-bottom-radius(3px);
+ border: 1px solid $color-gray;
+ .fancyDivider {
+  background: rgba(0,0,0,0.12);
+ }
+ .heading {
+ }
+ .heading2 {
+  a {
+   @include border-top-radius(3px);
+   @include border-bottom-radius(3px);
+   &:hover {
+    color: $color-dark-black;
+   }
+  }
+ }
+ &.shocklock {
+ }
+ &.pitstop {
+ }
+}
 
 /*
  Framework Modifications
@@ -271,7 +322,7 @@ body, html {
  background: white;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
  font-weight: 400 !important;
  text-transform: uppercase !important;
 }
